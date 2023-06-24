@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+{% load static %} <!-- Load static files using Django template syntax -->
+<html lang="fa"> <!-- Set the language to Persian (Farsi) -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title> خانه رزومه</title> <!-- Set the page title -->
+        <link rel="icon" type="image/x-icon" href="{% static '/assets/img/favicon.ico'%}"/>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static '/css/styles.css'%}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav dir="rtl" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+                    <!-- Logo and navigation links -->
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">عباس عباسی</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{% static '/assets/img/profile.jpg'%}" alt="https://ponisha.ir/profile/abbasabbasi" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div style="margin-left: 35px;" class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">درباره من</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">تجربیات</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">مهارتها</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">علاقه مندی ها</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">پروژه ها</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'blog:all_blogs' %}">وبلاگ</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div dir="rtl" class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <!-- Personal information and description -->
+                    <h1 class="mb-0">
+                        عباس
+                        <span class="text-primary">عباسی</span>
+                    </h1>
+                     <br>
+                    <div class="subheading mb-5">
+
+                        <a href="mailto:abbasabbasi.1991@yahoo.com">abbasabbasi.1991@yahoo.com</a>
+                    </div>
+                    <p class="lead mb-5">                           بیش از ۴ سال تجربه در برنامه نویسی بصورت حرفه ای و تسلط به زبانهای برنامه نویسی پایتون، جنگو، گولنگ، سی/سی++، آردوینو و سی‌شارپ دارم. </p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://t.me/AbbasA1991"><i class="fab fa-telegram-plane"></i></a>
+                        <a class="social-icon" href="https://www.instagram.com/abbasacodes/"><i class="fab fa-instagram"></i></a>
+                        <a class="social-icon" href="https://github.com/Abbas-Abbasi"><i class="fab fa-github"></i></a>
+{#                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>#}
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">تجربیات</h2>
+                     <!-- Work experience details -->
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">طراحی نرم افزار دسکتاپ</h3>
+                            <div class="subheading mb-3"></div>
+                            <p>تجربه‌ی چندساله‌ای در برنامه‌نویسی دسکتاپ با استفاده از سی شارپ دارم و قادر به توسعه‌ی برنامه‌های قدرتمند و کاربردی برای محیط دسکتاپ.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">طراحی وبسایت</h3>
+                            <div class="subheading mb-3"></div>
+                            <p>"من توانایی طراحی و توسعه وبسایت‌های شیءگرا و دینامیک را دارم و با استفاده از تکنولوژی‌های مدرن مانند HTML، CSS، JavaScript و فریمورک‌های روز دنیا، تجربه کاربری منحصربه‌فرد و رابط کاربری متعادلی را در وبسایت‌ها ایجاد می‌کنم."</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">برنامه نویسی Back-End</h3>
+                            <div class="subheading mb-3"></div>
+                            <p>"تخصص من در برنامه‌نویسی بک‌اند وبسایت‌ها است و قادر به طراحی و پیاده‌سازی لایه‌های سمت سرور با استفاده از زبان‌های مانند Python، Node.js و فریمورک‌های معتبر مانند Django  هستم."</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">طراحی انواع سیستم ها با آردوینو</h3>
+                            <div class="subheading mb-3"></div>
+                            <p>"من توانایی برنامه‌نویسی و پیاده‌سازی پروژه‌های الکترونیکی و کنترل دستگاه‌ها با استفاده از پلتفرم آردوینو را دارم و قادر به اتصال سنسورها، عملگرها و ماژول‌های مختلف با زبان برنامه‌نویسی C/C++ برای خلق ابداعات الکترونیکی هوشمند هستم."</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">مهارت ها</h2>
+                    <div class="subheading mb-3">زبان‌ها و ابزارهای برنامه‌نویسی</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-golang"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-php"></i></li>
+
+                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                        <li class="list-inline-item"><img src="{% static '/assets/icons/django.png'%}" alt="Django" class="small-icons"></li>
+                        <li class="list-inline-item"><img src="{% static '/assets/icons/C.png'%}" alt="C" class="small-icons"></li>
+                        <li class="list-inline-item"><img src="{% static '/assets/icons/C++.png'%}" alt="C++" class="small-icons"></li>
+                        <li class="list-inline-item"><img src="{% static '/assets/icons/C#.png'%}" alt="C#" class="small-icons"></li>
+                        <li class="list-inline-item"><img src="{% static '/assets/icons/arduino.png'%}" alt="Arduino" class="small-icons"></li>
+                    </ul>
+
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">علاقه مندی‌ها</h2>
+                    <p>Aعلاقه‌مندی‌های من شامل برنامه‌نویسی، حل مسائل چالش‌برانگیز، یادگیری تکنولوژی‌های جدید، خلق نرم‌افزارهای کاربردی و کاوش در حوزه‌های هوش مصنوعی و اینترنت اشیاء می‌باشد.</p>
+                    <p class="mb-0"></p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Projects-->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">پروژه ها</h2>
+                    <div class="row">
+                    {% for item in projects %}
+                        <div class="card" style="width: 18rem; margin: 10px;">
+                          <div class="card-image">
+                            <a href="{{ item.get_absolute_url }}">
+                              <img class="card-img-top" src="{{ item.image.url }}" alt="Card image cap">
+                            </a>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title corner-title">{{ item.title }}</h5>
+                            <p class="card-text card-text-resume-e">{{ item.description }}</p>
+                            {% if item.url %}
+                            <a href="{{ item.url }}" class="btn btn-primary corner-button">به وبسایت بروید</a>
+                            {% endif %}
+                          </div>
+                        </div>
+
+                    {% endfor %}
+                    </div>
+                </div>
+            </section>
+
+            <hr class="m-0" />
+
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static '/js/scripts.js'%}"></script>
+    </body>
+</html>
